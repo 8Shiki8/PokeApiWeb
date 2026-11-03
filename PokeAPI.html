@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéAPI - Todos los Pokémon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-btn" class="theme-btn" title="Cambiar tema">
+            <span class="theme-icon">🌙</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <h1>Pokédex</h1>
+
+        <div class="filter-section">
+            <div class="filter-header">
+                <h2>Filtrar por Tipo</h2>
+                <button id="clear-filters" class="clear-btn">Limpiar Filtros</button>
+            </div>
+            <div id="types-container" class="types-container"></div>
+        </div>
+
+        <div id="pokemon-grid" class="pokemon-grid"></div>
+        <div id="loading" class="loading">Cargando Pokémon...</div>
+        <div id="error" class="error" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
